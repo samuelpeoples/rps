@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"></style>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </style>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
+
 <body>
+    <h1>Rock, Paper, Scissors</h1>
+    <h3 id="roundTracker">Round 1</h3>
+    <h3 id="scoreTracker"> Player: 0 vs Computer: 0</h3>
     <button id="rockBtn">Rock</button>
     <button id="paperBtn">Paper</button>
     <button id="scissorsBtn">Scissors</button>
-    
-    <script>
-        
-        const rockBtn = document.querySelector("#rockBtn");
-        rockBtn.addEventListener("click", ()=>{
-            playRound("ROCK", getComputerChoice());
-        });
-
-        const paperBtn = document.querySelector("#paperBtn");
-        paperBtn.addEventListener("click", ()=>{
-            playRound("PAPER", getComputerChoice());
-        });
-        
-        const scissorsBtn = document.querySelector("#scissorsBtn");
-        scissorsBtn.addEventListener("click", ()=>{
-            playRound("SCISSORS", getComputerChoice());
-        });
-
-
-    </script>
+    <div id="resultContainer">
+    </div>
 </body>
+
 </html>
