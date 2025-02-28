@@ -8,6 +8,28 @@
     <title>Document</title>
 </head>
 <body>
+    <button id="rockBtn">Rock</button>
+    <button id="paperBtn">Paper</button>
+    <button id="scissorsBtn">Scissors</button>
     
+    <script>
+        
+        const rockBtn = document.querySelector("#rockBtn");
+        rockBtn.addEventListener("click", ()=>{
+            playRound("ROCK", getComputerChoice());
+        });
+
+        const paperBtn = document.querySelector("#paperBtn");
+        paperBtn.addEventListener("click", ()=>{
+            playRound("PAPER", getComputerChoice());
+        });
+        
+        const scissorsBtn = document.querySelector("#scissorsBtn");
+        scissorsBtn.addEventListener("click", ()=>{
+            playRound("SCISSORS", getComputerChoice());
+        });
+
+
+    </script>
 </body>
 </html>

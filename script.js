@@ -1,3 +1,5 @@
+
+
 function getComputerChoice() {
     let computerChoiceNum = Math.floor(Math.random() * 3) + 1;
     let computerChoice;
@@ -78,4 +80,3 @@ function playGame() {
     console.log(`Final score! Player ${playerScore} vs Computer ${computerScore}!`);
 }
 
-playGame();
